@@ -11,12 +11,8 @@ const Stack = createStackNavigator();
 //Laver stack navigation
 export default function StackNavigator() {
   return (
-    <Stack.Navigator initialRouteName="Back">
-      <Stack.Screen
-        name="Back"
-        component={ProfileScreen}
-        options={{ headerShown: false }} // Hide the header for this screen
-      />
+    <Stack.Navigator initialRouteName="Login">
+      <Stack.Screen name="Login" component={ProfileScreen} options={{ headerShown: false }} />
       <Stack.Screen name="ResetPassword" component={ResetPassword} />
       <Stack.Screen name="Membership" component={Membership} />
     </Stack.Navigator>
